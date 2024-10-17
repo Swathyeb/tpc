@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin Login</title>
+    <link rel="stylesheet" href="styleadl.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+            <label for="membershipId">Membership ID:</label>
+            <input type="text" id="membershipId" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="options">
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+            <p>Don't have an account? <a href="adminreh.html" id="registerHere">Register here</a></p>
+        </div>
+    </div>
+
+    <script src="scriptadl.js"></script>
+</body>
+</html>

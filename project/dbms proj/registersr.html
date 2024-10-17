@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration </h1>
+        <form id="registrationForm">
+            <label for="userType">Register as:</label>
+            <select id="userType" onchange="toggleFields()">
+                <option value="student">Student</option>
+                <option value="recruiter">Recruiter</option>
+            </select>
+
+            <div id="studentFields" class="userFields">
+                <h2>Student Registration</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" required>
+
+                <label for="year">Year:</label>
+                <input type="text" id="year" required>
+
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" required>
+
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" required>
+
+                <label for="registerNumber">Register Number:</label>
+                <input type="text" id="registerNumber" required>
+            </div>
+
+            <div id="recruiterFields" class="userFields" style="display:none;">
+                <h2>Recruiter Registration</h2>
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" required>
+
+                <label for="establishmentYear">Year of Establishment:</label>
+                <input type="text" id="establishmentYear" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <label for="licenseNo">License Number:</label>
+                <input type="text" id="licenseNo" required>
+
+                <label for="sector">Sector:</label>
+                <input type="text" id="sector" required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="scriptr.js"></script>
+</body>
+</html>
