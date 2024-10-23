@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard.html" class="back-button">&#8592; Back to Dashboard</a>
+        <a href="logout.html" class="logout-button">Logout</a>
+    </nav>
+    
+    <div class="profile-container">
+        <h1>Student Profile</h1>
+        <div class="profile-header">
+            <img id="student-photo" src="s.jpg" alt="Student Photo">
+            <div class="profile-info">
+                <h2 id="student-name">John Doe</h2>
+                <p><strong>Branch:</strong> Computer Science</p>
+                <p><strong>Semester:</strong> 6</p>
+                <p><strong>Phone:</strong> +1234567890</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Address:</strong> 123 Main St, City</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Date of Birth:</strong> 01-01-2000</p>
+                <p><strong>Nationality:</strong> American</p>
+            </div>
+        </div>
+        
+        <div class="grid-container">
+            <div class="skills-section">
+                <h3>Skills Acquired</h3>
+                <ul id="skills-list">
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <form enctype="multipart/form-data">
+            <div class="container">
+                <h3>Upload Certificates</h3>
+                        <input type="file" id="fileInput" accept="image/*" multiple>
+                        <button id="uploadButton">Upload</button>
+                        <div id="previewContainer"></div>
+                      
+            </div>
+            </form>
+        </div>
+
+
+        <div class="container1">
+            <h2 class="title">Upload Your Resume</h2>
+            <div class="upload-box">
+                <label id="upload-label">
+                    <span id="plus-icon">+</span>
+                    <input type="file" class="file-input" accept="image/*" onchange="handleFileChange(event)">
+                </label>
+            </div>
+        </div>
+        <button id="edit-button">Edit Profile</button>
+    </div>
+    
+    <script src="profile.js"></script>
+</body>
+</html>

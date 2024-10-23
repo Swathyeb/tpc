@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile - Training and Placement Cell</title>
+    <link rel="stylesheet" href="adminprofile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Profile - Training and Placement Cell</h1>
+        <button id="addStudentBtn" class="btn">Add Student</button>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Admission Number</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Email ID</th>
+                    <th>Registration Number</th>
+                    <th>Current Semester</th>
+                    <th>No. of Backlogs</th>
+                    <th>Current CGPA</th>
+                    <th>Skills Acquired</th>
+                    <th>Placement Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>123456</td>
+                    <td>123 Main St, City</td>
+                    <td>555-1234</td>
+                    <td>johndoe@example.com</td>
+                    <td>REG123</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>3.8</td>
+                    <td>Java, C++, HTML</td>
+                    <td>Placed</td>
+                    <td>
+                        <button class="editBtn">Edit</button>
+                        <button class="deleteBtn">Delete</button>
+                    </td>
+                </tr>
+                <!-- More example data can be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Add Student</h2>
+            <form id="studentForm">
+                <input type="hidden" id="studentIndex">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                <label>Admission Number:</label>
+                <input type="text" id="admissionNumber" required>
+                <label>Address:</label>
+                <input type="text" id="address" required>
+                <label>Phone Number:</label>
+                <input type="text" id="phone" required>
+                <label>Email ID:</label>
+                <input type="email" id="email" required>
+                <label>Registration Number:</label>
+                <input type="text" id="registrationNumber" required>
+                <label>Current Semester:</label>
+                <input type="number" id="semester" required>
+                <label>No. of Backlogs:</label>
+                <input type="number" id="backlogs" required>
+                <label>Current CGPA:</label>
+                <input type="number" step="0.01" id="cgpa" required>
+                <label>Skills Acquired:</label>
+                <input type="text" id="skills" required>
+                <label>Placement Status:</label>
+                <input type="text" id="placementStatus" required>
+                <button type="submit" class="btn" id="saveBtn">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="adminprofile.js"></script>
+</body>
+</html>

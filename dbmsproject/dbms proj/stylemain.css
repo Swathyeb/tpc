@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #50fff6, #479dff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(55, 51, 51, 0.2);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; 
+}
+.toggle-label{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #edd3d3;
+}
+.toggle-switch{
+    display: flex;
+    flex-direction: column;
+}
+.toggle-btn {
+    background-color: #5bbacb;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    flex: 1;
+    max-width: 150px; 
+}
+
+.toggle-btn:hover {
+    background-color: #e2d3d3;
+}
+
+.toggle-btn.active {
+    background-color: #0a04b0;
+    color: #e0d6d6;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ebe1e1;
+    border-radius: 5px;
+}
+
+button {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #2196f3;
+    transition: background 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #1596c9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
